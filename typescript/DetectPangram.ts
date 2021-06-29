@@ -15,3 +15,5 @@ export const isPangram = (phrase: string): boolean => {
 // every方法测试一个数组内的所有元素是否都能通过某个指定函数的测试，它返回一个布尔值
 //若收到一个空数组，此方法在一切情况下都会返回true
 //如果每次返回值都为truthy,则返回true，否则返回false
+
+//方法二：
