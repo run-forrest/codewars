@@ -17,3 +17,6 @@ export const isPangram = (phrase: string): boolean => {
 //如果每次返回值都为truthy,则返回true，否则返回false
 
 //方法二：
+function isPangram(string){
+    return (string.match(/([a-z](?!.*\1)/ig) || []).length === 26;
+  }
