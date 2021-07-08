@@ -20,3 +20,6 @@ export function tribonacci([a, b, c]: [number, number, number], n: number): numb
     }
     return nums;
 }
+
+
+// 优雅的写法
