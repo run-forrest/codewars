@@ -18,7 +18,7 @@ export class G964 {
 
     // 更美观的api
     public static digPow2 = (n, p) => {
-        var x = n.toString().split("").reduce((s, d, i) => s + Math.pow(d, p + i), 0)
+        let x = n.toString().split("").map(n => parseInt(n)).reduce((s, d, i) => s + Math.pow(d, p + i), 0);
         return x % n ? -1 : x / n;
     }
 }
