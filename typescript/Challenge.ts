@@ -12,3 +12,15 @@ export class Challenge {
         return sum; //change this
     }
 }
+
+// api使用
+export class Challenge2 {
+    static solution(number) {
+      if(number <= 0)
+        return 0;
+      return [...Array(number)]
+        .map((_,i) => i)
+        .filter((value, index) => index%3 === 0 || index%5 === 0)
+        .reduce((a, b) => a + b, 0);
+    }
+  }
