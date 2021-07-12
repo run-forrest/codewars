@@ -23,3 +23,4 @@ export function tribonacci([a, b, c]: [number, number, number], n: number): numb
 
 
 // 优雅的写法
+export const tribonacci = ([a, b, c]: [number, number, number], n: number): number[] => n < 1 ? [] : [a].concat(tribonacci([b, c, a + b + c], n - 1));
