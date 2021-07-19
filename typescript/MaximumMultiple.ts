@@ -6,7 +6,7 @@ export function maxMultiple(divisor: number, bound: number) {
     }
 }
 
-
+// math 
 export function maxMultiple2(divisor: number, bound: number) {
-        
-    }
+    return bound - bound % divisor;
+}
