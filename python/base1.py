@@ -7,7 +7,4 @@ def string_to_number(s):
 
 
 def comp(array1, array2):
-   try:
-        return sorted([i ** 2 for i in array1]) == sorted(array2)
-    except:
-        return False
+   return None not in (array1,array2) and [i*i for i in sorted(array1)]==sorted(array2)
